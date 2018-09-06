@@ -15,58 +15,59 @@ import org.apache.hadoop.io.IOUtils;
 public class HdfsTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		try {
+			/**设置用户名，解决权限问题*/
 			System.setProperty("HADOOP_USER_NAME","hadoop") ;
-//			downFromHdfs() ;
+			downFromHdfs() ;
 //			uploadFileToHdfs() ;
 //			mkdirToHdfs() ;
 //			createFile() ;
 //			renameFileOrDir() ;
 //			listDir() ;
-			delFile() ;
+//			delFile() ;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
-	//下载文件
+	/**将 hdfs 里面的文件 下载到本地*/
 	public static void downFromHdfs() throws Exception{
 		String path = "hdfs://192.168.106.48:9000" ;
 		URI uri = new URI(path) ;
-		/*获取文件系统对象 fs*/
+		/**获取文件系统对象 fs*/
 		FileSystem fs = FileSystem.get(uri, new Configuration()) ;
 		
-		/*Hadoop文件系统中 Path对象代表一个文件，此处表示要下载的文件的位置*/
+		/**Hadoop文件系统中 Path对象代表一个文件，此处表示要下载的文件的位置*/
 		Path src = new Path("/tfiles/a.txt") ;
+		/**连接对象创建 输入流 in，将 hdfs系统中内容读到内存*/
 		FSDataInputStream in = fs.open(src);
-		
+		/**下载目标路径*/
 		File targetFile = new File("d://aa.txt") ;
+		/** 创建文件输出流 out，将 内存中内容输出到文件*/
 		FileOutputStream out = new FileOutputStream(targetFile) ;
-		//IOUtils是Hadoop自己提供的工具类，在编程的过程中用的非常方便
-		//最后那个参数就是是否使用完关闭的意思
+		/**IOUtils是Hadoop的工具类，将输入直接输出到目的地，true表示结束后关闭流，buffSize表示缓存的大小*/
 		IOUtils.copyBytes(in, out, 4096, true);
 		System.out.println("=========文件下载成功=========");
 	}
 	
-	//2：上传文件
+	/**将 本地文件 上传到 hdfs*/
 	public static void uploadFileToHdfs() throws Exception{
-		//针对这种权限问题，有集中解决方案，这是一种，还可以配置hdfs的xml文件来解决
-		//System.setProperty("HADOOP_USER_NAME","hadoop") ;
+		//针对权限问题：1 配置hdfs的core-site.xml文件<property><name>dfs.permissions.enabled</name><value>false</value></property>
+		//2 System.setProperty("HADOOP_USER_NAME","hadoop")
 		
 		//FileSystem是一个抽象类，我们可以通过查看源码来了解
 		String path = "hdfs://192.168.106.48:9000" ;
 		URI uri = new URI(path) ;//创建URI对象  
 		FileSystem fs = FileSystem.get(uri, new Configuration()) ;//获取文件系统
-		//创建源地址
+		/**hadoop中 Path 代表文件*/
 		Path src = new Path("d://aa.txt") ;
-		//创建目标地址
+		/**上传到 hdfs的根目录 / 下*/
 		Path dst = new Path("/") ;
-		//调用文件系统的复制函数，前面的参数是指是否删除源文件，true为删除，否则不删除 
+		/**调用文件系统 fs 复制函数，前面的参数是指是否删除源文件，src源文件路径，dst目标文件路径 */
 		fs.copyFromLocalFile(false, src, dst);
-		//最后关闭文件系统
+
 		System.out.println("=========文件上传成功==========");
-		fs.close();//当然这里我们在正式书写代码的时候需要进行修改，在finally块中关闭
+		/*最后关闭文件系统*/
+		fs.close();
 	}
 	
 	//3：创建文件夹

@@ -5,12 +5,7 @@
         <url>http://maven.apache.org</url>
     </repository>
 </repositories>
-2、添加hadoop依赖
-<dependency>
-    <groupId>org.apache.hadoop</groupId>
-    <artifactId>hadoop-core</artifactId>
-    <version>1.2.1</version>
-</dependency>
+2、添加hadoop依赖，不要引入hadoop-core包，版本太低，会冲突；
 <dependency>
     <groupId>org.apache.hadoop</groupId>
     <artifactId>hadoop-common</artifactId>
