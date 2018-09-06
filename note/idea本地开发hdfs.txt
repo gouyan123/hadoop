@@ -1,0 +1,53 @@
+1、添加apache源，maven默认是不支持apache仓库的，需要在pom.xml中配置apache的仓库
+<repositories>
+    <repository>
+        <id>apache</id>
+        <url>http://maven.apache.org</url>
+    </repository>
+</repositories>
+2、添加hadoop依赖
+<dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-core</artifactId>
+    <version>1.2.1</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-common</artifactId>
+    <version>2.7.3</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-hdfs</artifactId>
+    <version>2.7.3</version>
+</dependency>
+<!--客户端操作 hadoop-->
+<dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-client</artifactId>
+    <version>2.7.3</version>
+</dependency>
+--------------------------------------------------------------------------------------------------------------------------------------------------
+org.apache.hadoop.fs包中几个重要的类如下：
+configuration类：该类的对象封装了配置信息，这些配置信息来自core-*.xml；
+FileSystem类：文件系统类，可使用该类的方法对文件/目录进行操作。一般通过FileSystem的静态方法get获得一个文件系统对象；
+FSDataInputStream和FSDataOutputStream类：HDFS中的输入输出流。分别通过FileSystem的Open方法和create方法获得；
+
+创建 HdfsTest类
+public class HdfsTest {
+}
+创建 downFromHdfs()方法，下载 hdfs系统中文件；
+public static void downFromHdfs() throws Exception{
+    String path = "hdfs://192.168.153.111:9000" ;
+    URI uri = new URI(path) ;
+    FileSystem fs = FileSystem.get(uri, new Configuration()) ;
+    //Hadoop文件系统中通过Hadoop Path对象来代表一个文件
+    Path src = new Path("/tfiles/a.txt") ;
+    FSDataInputStream in = fs.open(src);
+    File targetFile = new File("d://aa.txt") ;
+    FileOutputStream out = new FileOutputStream(targetFile) ;
+    //IOUtils是Hadoop自己提供的工具类，在编程的过程中用的非常方便
+    //最后那个参数就是是否使用完关闭的意思
+    IOUtils.copyBytes(in, out, 4096, true);
+    System.out.println("=========文件下载成功=========");
+}
