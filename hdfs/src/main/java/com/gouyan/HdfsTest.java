@@ -17,10 +17,10 @@ public class HdfsTest {
 	public static void main(String[] args) {
 		try {
 			/**设置用户名，解决权限问题*/
-			System.setProperty("HADOOP_USER_NAME","hadoop") ;
+			System.setProperty("HADOOP_USER_NAME","root") ;
 			downFromHdfs() ;
 //			uploadFileToHdfs() ;
-//			mkdirToHdfs() ;
+			mkdirToHdfs() ;
 //			createFile() ;
 //			renameFileOrDir() ;
 //			listDir() ;
@@ -73,7 +73,7 @@ public class HdfsTest {
 	//3：创建文件夹
 	public static void mkdirToHdfs(){
 		
-		String path = "hdfs://192.168.106.48:9000" ;
+		String path = "hdfs://192.168.245.128:9000" ;
 		URI uri = null ;
 		FileSystem fs = null ;
 		try {
