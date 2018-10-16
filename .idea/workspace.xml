@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fe2e06d-e3b9-4833-bfcc-3bb776db61dc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/HBase/src/main/java/HbaseClientDML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBase/target/classes/HbaseClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBase/src/main/java/HbaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBase/src/main/java/HbaseClientDDL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/note/数据采集设计.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/note/数据采集设计.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderHungery.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderHungery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/resources/collect.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/resources/collect.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/target/classes/cn/edu360/hdfs/demo/HdfsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/target/classes/cn/edu360/hdfs/demo/HdfsClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/note/idea本地开发hadoop.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/note/idea本地开发hadoop.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/Mapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,29 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="数据采集设计.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hdfs/note/数据采集设计.txt">
+      <file leaf-file-name="HdfsWordcount.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1353">
-              <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+            <state relative-caret-position="328">
+              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataCollectMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java">
+      <file leaf-file-name="idea本地开发hadoop.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hdfs/note/idea本地开发hadoop.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyHolderLazy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="9" column="120" selection-start-line="9" selection-start-column="120" selection-end-line="9" selection-end-column="120" />
+            <state relative-caret-position="-1124">
+              <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -92,7 +70,6 @@
         <option value="$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/up2hdfs.java" />
         <option value="$PROJECT_DIR$/note/idea本地开发hdfs.txt" />
         <option value="$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/HdfsClient.java" />
-        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java" />
         <option value="$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/HdfsTest.java" />
         <option value="$PROJECT_DIR$/hdfs/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/note/数据采集设计.txt" />
@@ -115,6 +92,10 @@
         <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java" />
         <option value="$PROJECT_DIR$/hdfs/src/main/resources/collect.properties" />
         <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java" />
+        <option value="$PROJECT_DIR$/hdfs/note/数据采集设计.txt" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/Mapper.java" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java" />
+        <option value="$PROJECT_DIR$/hdfs/note/idea本地开发hadoop.txt" />
       </list>
     </option>
   </component>
@@ -215,16 +196,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hdfs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
-              <item name="datacollect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
@@ -456,7 +427,7 @@
       <workItem from="1539253977397" duration="5799000" />
       <workItem from="1539305804221" duration="4091000" />
       <workItem from="1539594418011" duration="4136000" />
-      <workItem from="1539651713010" duration="7272000" />
+      <workItem from="1539651713010" duration="8161000" />
     </task>
     <servers />
   </component>
@@ -493,7 +464,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60758000" />
+    <option name="totallyTimeSpent" value="61647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -513,7 +484,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.5117647" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24624464" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -565,27 +536,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/note/数据采集设计.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2173">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hdfs/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2009">
@@ -703,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="44" column="30" lean-forward="true" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/HdfsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -778,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1233">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HBase/src/main/java/HbaseClientDML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
@@ -796,20 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/note/idea本地开发hdfs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="8" selection-start-line="8" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/note/数据采集设计.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1353">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -841,13 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderHungery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
@@ -857,8 +772,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="9" column="120" selection-start-line="9" selection-start-column="120" selection-end-line="9" selection-end-column="120" />
+        <state relative-caret-position="369">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/note/数据采集设计.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1927">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/CaseIgnorWcountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/resources/job.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/note/idea本地开发hadoop.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1124">
+          <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
         </state>
       </provider>
     </entry>
