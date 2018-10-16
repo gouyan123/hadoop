@@ -1,3 +1,4 @@
+---javaAPI操作hdfs的准备
 1、添加apache源，maven默认是不支持apache仓库的，需要在pom.xml中配置apache的仓库
 <repositories>
     <repository>
@@ -30,6 +31,35 @@ FSDataInputStream和FSDataOutputStream类：HDFS中的输入输出流。分别�
 使用 java api操作hdfs：
 创建 cn.edu360.hdfs.javaAPI.HdfsClient类，使用java api操作hdfs；
 流实质：根据数据类型，每次读取 n个字节，并将这n个字节转换为相应内容，以此类推；
+---采集本地日志数据到 hdfs
+日志文件定时上传hdfs：
+1、流程
+启动一个定时任务：
+	——定时探测日志源目录
+	——获取需要采集的文件
+	——移动这些文件到一个待上传临时目录(防止在原路径下，上传一半，文件发生改变)
+	——遍历待上传目录中各文件，逐一传输到HDFS的目标路径，同时将传输完成的文件移动到备份目录
+启动一个定时任务：
+	——探测备份目录中的备份数据，检查是否已超出最长备份时长，如果超出，则删除
+
+2、规划各种路径
+日志源路径： d:/logs/accesslog/
+待上传临时目录： d:/logs/toupload/
+备份目录： d:/logs/backup/日期/
+
+HDFS存储路径： /logs/日期
+HDFS中的文件的前缀：access_log_
+HDFS中的文件的后缀：.log
+创建 cn.edu360.hdfs.datacollect.DataCollectMain类，创建定时器Timer，周期执行线程任务 TimerTask，该任务负责收集日志并备份；
+
+创建 定时任务 CollectTask，定时去本地目录获取 日志文件，保存到临时目录后，将临时目录中日志文件上传到 hdfs；
+日志来源：resources路径下定义了log4j.properties，其中定义日志存放路径 log4j.appender.test1.File = d:/logs/collect/collect.log
+
+创建 定时任务 BackupCleanTask，定时清空备份路径下的文件；
+
+目前功能已实现，但是不规范；1 代码中都是 常量，常量应该定义在 配置文件中，此处定义 collect.properties配置文件；2 定义单例模式类 PropertyHolderLazy，读取配置
+文件；
+---
 ---
 MapReduce简介：见 mapreduce01.jpg，mapreduce02.jpg
 MapReduce分为 2个阶段：
@@ -40,7 +70,7 @@ MapReduce分为 2个阶段：
 2、reduce阶段：ReduceTask1将所有MapTask中的key为Hello的数据汇总到一起计算数量，ReduceTask2将所有MapTask中key为 World的数据汇总到一起计算数量；即某一类的数
 据给一个 ReduceTask，另一类数据给另一个ReduceTask；即shuffle 数据分发，发牌，将同一类数据发给同一个 ReduceTask进行处理，而是去调一个接口的实现类的方法，实现
 类的实现方法由用户自己定义，它会将参数通过接口方法传过来；最后再将结果写到 hdfs的某路径下；
----
+
 基于mapreduce写WordCount：
 各 MapTask先去 hdfs读取数据，然后一行一行的处理数据(写死的)，每拿一行数据，调一下自己实现的 map(long key,String v,context)方法，对行数据进行逻辑处理，其中
 key表示行号，v表示行的内容；通过context返回 context.write(单词,1)，例如context.write("Hello",1),context.write("Hello",1),context.write("World",1);
