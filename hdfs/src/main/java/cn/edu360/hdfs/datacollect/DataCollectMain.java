@@ -13,7 +13,7 @@ public class DataCollectMain {
 							}
 		},delay,period)*/
 		Timer timer = new Timer();
-		timer.schedule(new CollectTask(), 0, 60*60*1000L);
-		timer.schedule(new BackupCleanTask(), 0, 60*60*1000L);
+		timer.schedule(new CollectTask(), 0, 60*60*1000L);	// 间隔 1h执行一次定时任务CollectTask()
+		timer.schedule(new BackupCleanTask(), 0, 60*60*1000L);	// 间隔 1h执行一次定时任务BackupCleanTask()
 	}
 }

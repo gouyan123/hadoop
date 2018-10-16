@@ -2,36 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fe2e06d-e3b9-4833-bfcc-3bb776db61dc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBase/src/main/java/HbaseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbase/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderHungery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/CaseIgnorWcountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/WordCountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdfs/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/mapreduce01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/mapreduce02.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase/src/main/java/HbaseClientDML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase/target/classes/HbaseClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HBase/src/main/java/HbaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBase/src/main/java/HbaseClientDDL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/note/数据采集设计.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/note/数据采集设计.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hdfs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/HdfsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/HdfsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/src/main/resources/core-site.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/target/classes/com/gouyan/HdfsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/target/classes/com/gouyan/HdfsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfs/target/classes/com/gouyan/up2hdfs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderHungery.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderHungery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/src/main/resources/collect.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/src/main/resources/collect.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdfs/target/classes/cn/edu360/hdfs/demo/HdfsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hdfs/target/classes/cn/edu360/hdfs/demo/HdfsClient.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,11 +37,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="HbaseClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HBase/src/main/java/HbaseClient.java">
+      <file leaf-file-name="数据采集设计.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hdfs/note/数据采集设计.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="1353">
+              <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataCollectMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyHolderLazy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="9" column="120" selection-start-line="9" selection-start-column="120" selection-end-line="9" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -88,22 +92,29 @@
         <option value="$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/up2hdfs.java" />
         <option value="$PROJECT_DIR$/note/idea本地开发hdfs.txt" />
         <option value="$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/HdfsClient.java" />
-        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java" />
-        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java" />
-        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java" />
         <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/wordcount/HdfsWordcount.java" />
         <option value="$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/HdfsTest.java" />
         <option value="$PROJECT_DIR$/hdfs/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java" />
         <option value="$PROJECT_DIR$/note/数据采集设计.txt" />
         <option value="$PROJECT_DIR$/hbase/src/main/java/cn/edu360/hbase/HbaseClient.java" />
         <option value="$PROJECT_DIR$/hbase/src/main/java/cn/edu360/hbase/demo/HbaseClientDemo.java" />
         <option value="$PROJECT_DIR$/hbase/pom.xml" />
         <option value="$PROJECT_DIR$/hdfs/src/main/java/HbaseClientDemo.java" />
-        <option value="$PROJECT_DIR$/hdfs/pom.xml" />
         <option value="$PROJECT_DIR$/HBase/pom.xml" />
         <option value="$PROJECT_DIR$/HBase/src/main/java/HbaseClientDemo.java" />
         <option value="$PROJECT_DIR$/HBase/src/main/java/HbaseClient.java" />
+        <option value="$PROJECT_DIR$/HBase/src/main/java/HbaseClientDDL.java" />
+        <option value="$PROJECT_DIR$/HBase/src/main/java/HbaseClientDML.java" />
+        <option value="$PROJECT_DIR$/hdfs/pom.xml" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderHungery.java" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/Constants.java" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/Demo.java" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/resources/collect.properties" />
+        <option value="$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java" />
       </list>
     </option>
   </component>
@@ -141,8 +152,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1040" />
     <option name="height" value="744" />
   </component>
@@ -154,9 +165,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,28 +178,61 @@
             <path>
               <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="HBase" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="HBase" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
+              <item name="note" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="HBase" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="HBase" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
+              <item name="datacollect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="hdfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -199,7 +243,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/HBase" />
+    <property name="last_opened_file_path" value="D:/company/domesticticketflight-service(20181008_0440)_MergerTrunk2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -209,6 +253,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\hadoop\hdfs\note" />
       <recent name="D:\ideaProject\hadoop\hdfs\src\main\resources" />
       <recent name="D:\ideaProject\hadoop\note" />
     </key>
@@ -216,11 +261,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\hadoop\HBase\src\main\java" />
+      <recent name="D:\ideaProject\hadoop\HBase\src\main\resources" />
+      <recent name="D:\ideaProject\hadoop\hdfs\note" />
       <recent name="D:\ideaProject\hadoop\hbase\src\main\java" />
       <recent name="D:\ideaProject\hadoop\image" />
-      <recent name="D:\ideaProject\hadoop\hdfs" />
-      <recent name="D:\ideaProject\hadoop\hdfs\src\main\resources" />
-      <recent name="D:\ideaProject\hadoop\hdfs\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -235,25 +280,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HdfsClient.testReadData">
+  <component name="RunManager" selected="Application.HdfsClient">
     <configuration name="HdfsClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu360.hdfs.demo.HdfsClient" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu360.hdfs.javaAPI.HdfsClient" />
       <module name="hdfs" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.edu360.hdfs.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="HdfsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gouyan.HdfsTest" />
-      <module name="hdfs" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gouyan.*" />
+          <option name="PATTERN" value="cn.edu360.hdfs.javaAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -261,19 +295,13 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="HdfsClient.testLs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hdfs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu360.hdfs.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="HbaseClient.getConn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hbase" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.edu360.hdfs.demo" />
-      <option name="MAIN_CLASS_NAME" value="cn.edu360.hdfs.demo.HdfsClient" />
-      <option name="METHOD_NAME" value="testLs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HbaseClient" />
+      <option name="METHOD_NAME" value="getConn" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -284,19 +312,30 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="HdfsClient.testMkdir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hdfs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu360.hdfs.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="HbaseClient.testCreateTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hbase" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.edu360.hdfs.demo" />
-      <option name="MAIN_CLASS_NAME" value="cn.edu360.hdfs.demo.HdfsClient" />
-      <option name="METHOD_NAME" value="testMkdir" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HbaseClient" />
+      <option name="METHOD_NAME" value="testCreateTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="HbaseClient.testDropTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hbase" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HbaseClient" />
+      <option name="METHOD_NAME" value="testDropTable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -311,14 +350,14 @@
       <module name="hdfs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.edu360.hdfs.demo.*" />
+          <option name="PATTERN" value="cn.edu360.hdfs.javaAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.edu360.hdfs.demo" />
-      <option name="MAIN_CLASS_NAME" value="cn.edu360.hdfs.demo.HdfsClient" />
+      <option name="PACKAGE_NAME" value="cn.edu360.hdfs.javaAPI" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu360.hdfs.javaAPI.HdfsClient" />
       <option name="METHOD_NAME" value="testReadData" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -346,16 +385,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="hdfs" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -378,20 +407,30 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="hdfs" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
     <list>
-      <item itemvalue="JUnit.HdfsClient.testMkdir" />
-      <item itemvalue="JUnit.HdfsClient.testLs" />
       <item itemvalue="JUnit.HdfsClient.testReadData" />
       <item itemvalue="Application.HdfsClient" />
-      <item itemvalue="Application.HdfsTest" />
+      <item itemvalue="JUnit.HbaseClient.testCreateTable" />
+      <item itemvalue="JUnit.HbaseClient.testDropTable" />
+      <item itemvalue="JUnit.HbaseClient.getConn" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HdfsClient.testReadData" />
         <item itemvalue="Application.HdfsClient" />
-        <item itemvalue="JUnit.HdfsClient.testMkdir" />
-        <item itemvalue="Application.HdfsTest" />
-        <item itemvalue="JUnit.HdfsClient.testLs" />
+        <item itemvalue="JUnit.HbaseClient.getConn" />
+        <item itemvalue="JUnit.HbaseClient.testDropTable" />
+        <item itemvalue="JUnit.HbaseClient.testCreateTable" />
+        <item itemvalue="JUnit.HdfsClient.testReadData" />
       </list>
     </recent_temporary>
   </component>
@@ -414,44 +453,47 @@
       <workItem from="1537875960614" duration="6397000" />
       <workItem from="1537923694076" duration="642000" />
       <workItem from="1539251947209" duration="2000000" />
-      <workItem from="1539253977397" duration="1152000" />
+      <workItem from="1539253977397" duration="5799000" />
+      <workItem from="1539305804221" duration="4091000" />
+      <workItem from="1539594418011" duration="4136000" />
+      <workItem from="1539651713010" duration="7272000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HdfsClient_testReadData - 2018.09.25 at 18h 01m 07s.xml">
-      <configuration name="HdfsClient.testReadData" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HdfsClient_testMkdir - 2018.09.25 at 19h 00m 42s.xml">
-      <configuration name="HdfsClient.testMkdir" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HdfsClient_testMkdir - 2018.09.25 at 19h 06m 23s.xml">
-      <configuration name="HdfsClient.testMkdir" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HdfsClient_testMkdir - 2018.09.25 at 19h 11m 43s.xml">
-      <configuration name="HdfsClient.testMkdir" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HdfsClient_testMkdir - 2018.09.25 at 19h 12m 24s.xml">
-      <configuration name="HdfsClient.testMkdir" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HdfsClient_testMkdir - 2018.09.25 at 19h 23m 31s.xml">
-      <configuration name="HdfsClient.testMkdir" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HdfsClient_testMkdir - 2018.09.25 at 19h 49m 11s.xml">
-      <configuration name="HdfsClient.testMkdir" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HdfsClient_testMkdir - 2018.09.25 at 19h 49m 39s.xml">
-      <configuration name="HdfsClient.testMkdir" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HdfsClient_testReadData - 2018.09.25 at 19h 52m 08s.xml">
       <configuration name="HdfsClient.testReadData" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HdfsClient_testReadData - 2018.09.25 at 19h 52m 45s.xml">
       <configuration name="HdfsClient.testReadData" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HbaseClient_testCreateTable - 2018.10.11 at 19h 12m 20s.xml">
+      <configuration name="HbaseClient.testCreateTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HbaseClient_testCreateTable - 2018.10.11 at 19h 15m 20s.xml">
+      <configuration name="HbaseClient.testCreateTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HbaseClient_testDropTable - 2018.10.11 at 19h 15m 32s.xml">
+      <configuration name="HbaseClient.testDropTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HbaseClient_testDropTable - 2018.10.11 at 19h 21m 50s.xml">
+      <configuration name="HbaseClient.testDropTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HbaseClient_getConn - 2018.10.11 at 19h 25m 47s.xml">
+      <configuration name="HbaseClient.getConn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HbaseClient_getConn - 2018.10.11 at 19h 28m 54s.xml">
+      <configuration name="HbaseClient.getConn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HbaseClient_getConn - 2018.10.11 at 19h 29m 02s.xml">
+      <configuration name="HbaseClient.getConn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HbaseClient_getConn - 2018.10.11 at 19h 30m 17s.xml">
+      <configuration name="HbaseClient.getConn" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40612000" />
+    <option name="totallyTimeSpent" value="60758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -467,26 +509,26 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3299356" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7752941" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7750294" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.5117647" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28755364" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.46470588" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39929327" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.4640754" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3299356" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,42 +537,34 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>fs</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>conf</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hbase/src/main/java/cn/edu360/hbase/demo/HbaseClientDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HBase/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2173">
-          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/note/数据采集设计.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1968">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/note/数据采集设计.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1968">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hdfs/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -538,14 +572,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/note/数据采集设计.txt">
+    <entry file="file://$PROJECT_DIR$/hdfs/note/数据采集设计.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2173">
           <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
@@ -573,7 +607,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2829">
           <caret line="75" column="95" selection-start-line="75" selection-start-column="95" selection-end-line="75" selection-end-column="95" />
@@ -601,7 +635,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3075">
           <caret line="75" column="95" selection-start-line="75" selection-start-column="95" selection-end-line="75" selection-end-column="95" />
@@ -622,13 +656,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/note/idea本地开发hdfs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/note/idea本地开发hdfs.txt" />
     <entry file="file://$PROJECT_DIR$/hdfs/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1025">
@@ -636,13 +664,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/note/idea本地开发hdfs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/note/idea本地开发hdfs.txt" />
     <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/com/gouyan/HdfsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -674,52 +696,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hdfs24/src/log4j.properties" />
     <entry file="file://$PROJECT_DIR$/hdfs/src/main/resources/core-site.xml" />
-    <entry file="file://$PROJECT_DIR$/note/idea本地开发hdfs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1083">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/org/apache/commons/io/FileUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45387">
           <caret line="1260" column="23" selection-start-line="1260" selection-start-column="23" selection-end-line="1260" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -744,6 +724,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hbase/src/main/java/cn/edu360/hbase/HbaseClient.java" />
+    <entry file="file://$PROJECT_DIR$/hbase/src/main/java/cn/edu360/hbase/demo/HbaseClientDemo.java" />
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/HbaseClientDemo.java" />
+    <entry file="file://$PROJECT_DIR$/note/idea本地开发hdfs.txt" />
+    <entry file="jar://D:/mavenRepository/org/apache/hadoop/hadoop-core/1.2.1/hadoop-core-1.2.1.jar!/org/apache/hadoop/conf/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="147" column="16" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenRepository/org/apache/hbase/hbase-common/1.2.1/hbase-common-1.2.1.jar!/org/apache/hadoop/hbase/HBaseConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1517">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenRepository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBase/src/main/java/HbaseClient.java" />
+    <entry file="file://$PROJECT_DIR$/HBase/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBase/src/main/java/HbaseClientDDL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1148">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1066">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hdfs/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -751,66 +778,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/HdfsClient.java">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/javaAPI/HdfsClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+        <state relative-caret-position="-1233">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/note/数据采集设计.txt">
+    <entry file="file://$PROJECT_DIR$/HBase/src/main/java/HbaseClientDML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
+        <state relative-caret-position="41">
+          <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/demo/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/note/idea本地开发hdfs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="8" selection-start-line="8" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/note/数据采集设计.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1353">
           <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase/src/main/java/cn/edu360/hbase/HbaseClient.java">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/resources/collect.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="369">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase/src/main/java/cn/edu360/hbase/demo/HbaseClientDemo.java">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="56">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/HbaseClientDemo.java">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/CollectTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="205">
+          <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfs/pom.xml">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/BackupCleanTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2460">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="164">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HBase/pom.xml">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/DataCollectMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="656">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HBase/src/main/java/HbaseClient.java">
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderHungery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfs/src/main/java/cn/edu360/hdfs/datacollect/PropertyHolderLazy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="9" column="120" selection-start-line="9" selection-start-column="120" selection-end-line="9" selection-end-column="120" />
         </state>
       </provider>
     </entry>

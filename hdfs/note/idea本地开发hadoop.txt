@@ -46,3 +46,19 @@ public static void downFromHdfs() throws Exception{
     IOUtils.copyBytes(in, out, 4096, true);
     System.out.println("=========文件下载成功=========");
 }
+---
+MapReduce简介：见 mapreduce01.jpg，mapreduce02.jpg
+MapReduce分为 2个阶段：
+1、map阶段：自动创建若干个MapTask，去读取 HDFS上面的文件，读取hdfs中文件之前，要对所有的要读取文件进行 切片；如果每个切片大小为128M，而要处理的文件总共500M，
+则要划分为 4个切片，需启动4个 MapTask，一个 MapTask处理一个任务；当MapTask数量过大时，可以分批进行处理；MapTask每读一行，使用接口进行处理，但是，MapTask并不
+知道用户想怎么处理，因此用户必须将实现类提供给 MapTask的接口，并通过配置文件指定要调的类；方法参数：hdfs中取出的数据；最后通过 Context，返回结果；每个MapTask
+只拿到其中一部分数据，还需要 reduce阶段；
+2、reduce阶段：ReduceTask1将所有MapTask中的key为Hello的数据汇总到一起计算数量，ReduceTask2将所有MapTask中key为 World的数据汇总到一起计算数量；即某一类的数
+据给一个 ReduceTask，另一类数据给另一个ReduceTask；即shuffle 数据分发，发牌，将同一类数据发给同一个 ReduceTask进行处理，而是去调一个接口的实现类的方法，实现
+类的实现方法由用户自己定义，它会将参数通过接口方法传过来；最后再将结果写到 hdfs的某路径下；
+---
+基于mapreduce写WordCount：
+各 MapTask先去 hdfs读取数据，然后一行一行的处理数据(写死的)，每拿一行数据，调一下自己实现的 map(long key,String v,context)方法，对行数据进行逻辑处理，其中
+key表示行号，v表示行的内容；通过context返回 context.write(单词,1)，例如context.write("Hello",1),context.write("Hello",1),context.write("World",1);
+map()处理后，将数据交给 shuffle，shuffle将数据分发给各个 ReduceTask，将key相同的所有数据都要发给同一个ReduceTask，然后调用 reduce(k,value迭代器,context)
+对key相同的值进行计算，然后通过 context.write(k,count)返回；

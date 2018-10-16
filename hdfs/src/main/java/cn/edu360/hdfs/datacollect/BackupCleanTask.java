@@ -8,7 +8,6 @@ import java.util.TimerTask;
 import org.apache.commons.io.FileUtils;
 
 public class BackupCleanTask extends TimerTask {
-
 	@Override
 	public void run() {
 		/*探测备份目录*/
@@ -19,7 +18,6 @@ public class BackupCleanTask extends TimerTask {
 			// 探测本地备份目录
 			File backupBaseDir = new File("d:/logs/backup/");
 			File[] dayBackDir = backupBaseDir.listFiles();
-
 			// 判断备份日期子目录是否已超24小时
 			for (File dir : dayBackDir) {
 				long time = sdf.parse(dir.getName()).getTime();
@@ -30,7 +28,5 @@ public class BackupCleanTask extends TimerTask {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
-
 }
