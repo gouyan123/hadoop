@@ -26,7 +26,7 @@ public class HdfsWordcount {
 		Mapper mapper = (Mapper) mapper_class.newInstance();
 		Context context  =  new Context();
 		/**处理数据*/
-		FileSystem fs = FileSystem.get(new URI("hdfs://hdp-01:9000"), new Configuration(), "root");
+		FileSystem fs = FileSystem.get(new URI("hdfs://h250:9000"), new Configuration(), "root");
 		RemoteIterator<LocatedFileStatus> iter = fs.listFiles(input, false);
 		while(iter.hasNext()){
 			LocatedFileStatus file = iter.next();

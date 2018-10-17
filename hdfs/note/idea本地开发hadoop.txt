@@ -24,6 +24,7 @@
     <version>2.7.3</version>
 </dependency>
 ---
+---JavaAPI操作 hdfs分布式文件系统
 org.apache.hadoop.fs包中几个重要的类如下：
 configuration类：该类的对象封装了配置信息，这些配置信息来自core-*.xml；
 FileSystem类：文件系统类，可使用该类的方法对文件/目录进行操作。一般通过FileSystem的静态方法get获得一个文件系统对象；
@@ -60,7 +61,7 @@ HDFS中的文件的后缀：.log
 目前功能已实现，但是不规范；1 代码中都是 常量，常量应该定义在 配置文件中，此处定义 collect.properties配置文件；2 定义单例模式类 PropertyHolderLazy，读取配置
 文件；
 ---
----
+---WordCoud简单框架
 MapReduce简介：见 mapreduce01.jpg，mapreduce02.jpg
 MapReduce分为 2个阶段：
 1、map阶段：自动创建若干个MapTask，去读取 HDFS上面的文件，读取hdfs中文件之前，要对所有的要读取文件进行 切片；如果每个切片大小为128M，而要处理的文件总共500M，
@@ -76,3 +77,9 @@ MapReduce分为 2个阶段：
 key表示行号，v表示行的内容；通过context返回 context.write(单词,1)，例如context.write("Hello",1),context.write("Hello",1),context.write("World",1);
 map()处理后，将数据交给 shuffle，shuffle将数据分发给各个 ReduceTask，将key相同的所有数据都要发给同一个ReduceTask，然后调用 reduce(k,value迭代器,context)
 对key相同的值进行计算，然后通过 context.write(k,count)返回；
+*** 以上为基本原理，下面设计WordCount的框架，见 cn.edu360.hdfs.wordcount；
+HdfsWordcount.main()方法为框架主流程，设计后绝对不能修改；框架主流程中 只能使用接口，不能使用 实现类，因为设计这个主流程的时候，还没有实现类，实现类是以后开发
+的时候实现具体功能的；例如，HdfsWordcount.main()这个框架主流程中使用 Mapper接口，实现类是开发的时候写的，分别为CaseIgnorWcountMapper和WordCountMapper，并
+将这 2个实现类配在 配置文件 job.properties中，框架主流程 通过反射进行实例化，并 赋值给Mapper接口；这样，当新定义Mapper接口实现类的时候，只需要将实现类写在
+job.properties配置文件中即可；
+---
