@@ -1,3 +1,4 @@
+---maven中央仓库：search.maven.org，搜 hadoop-client，选org.apache.hadoop单击，
 ---javaAPI操作hdfs的准备
 1、添加apache源，maven默认是不支持apache仓库的，需要在pom.xml中配置apache的仓库
 <repositories>
@@ -83,3 +84,80 @@ HdfsWordcount.main()方法为框架主流程，设计后绝对不能修改；框
 将这 2个实现类配在 配置文件 job.properties中，框架主流程 通过反射进行实例化，并 赋值给Mapper接口；这样，当新定义Mapper接口实现类的时候，只需要将实现类写在
 job.properties配置文件中即可；
 ---
+基于mapreduce实现 WordCount：具体原理看 有道云笔记 day03-MapReduce与Yarn详解
+创建 WordcountMapper extents Mapper，maptask每从hdfs中读取一条数据，就调用一次这里的 map()方法；
+public class WordcountMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
+   	@Override
+   	protected void map(LongWritable key, Text value, Context context)
+   			throws IOException, InterruptedException {
+   		// 切单词
+   		String line = value.toString();
+   		String[] words = line.split(" ");
+   		for(String word:words){
+   			context.write(new Text(word), new IntWritable(1));
+   		}
+   	}
+}
+创建 WordcountReducer extents Reducer，reducetask接收到一组数据，就调用一次reduce()方法；一组的含义：('Hello',1),('Hello',2),('Hello',3)
+public class WordcountReducer extends Reducer<Text, IntWritable, Text, IntWritable>{
+	@Override
+	protected void reduce(Text key, Iterable<IntWritable> values,Context context) throws IOException, InterruptedException {
+		int count = 0;
+		Iterator<IntWritable> iterator = values.iterator();
+		while(iterator.hasNext()){
+			IntWritable value = iterator.next();
+			count += value.get();
+		}
+		context.write(key, new IntWritable(count));
+	}
+}
+创建 JobSubmitter类，将自定义的WordcountMapper类和WordcountReducer类提交到 yarn集群上面运行；
+1)将工程整体打成一个jar包并上传到linux机器上；
+2)准备好要处理的数据文件放到hdfs的指定目录中；
+3)用命令启动jar包中的Jobsubmitter，让它去提交jar包给yarn来运行其中的mapreduce程序  ：  hadoop jar wc.jar cn.edu360.mr.wordcount.JobSubmitter .....；
+4)去hdfs的输出目录中查看结果；
+public class JobSubmitter {
+	public static void main(String[] args) throws Exception {
+		// 在代码中设置JVM系统参数，用于给job对象来获取访问HDFS的用户身份
+		System.setProperty("HADOOP_USER_NAME", "root");
+		Configuration conf = new Configuration();
+		// 1、设置job运行时要访问的默认文件系统
+		conf.set("fs.defaultFS", "hdfs://h250:9000");
+		// 2、设置job提交到哪去运行；1 在yarn上运行；2 在本地运行；
+		conf.set("mapreduce.framework.name", "yarn");
+		// 设置 yarn的 Resource Manager节点的 hostname；
+		conf.set("yarn.resourcemanager.hostname", "h250");
+		// 3、如果要从windows系统上运行这个job提交客户端程序，则需要加这个跨平台提交的参数
+		conf.set("mapreduce.app-submission.cross-platform","true");
+		// 根据配置获取 job对象
+		Job job = Job.getInstance(conf);
+		// 1、job中封装参数：jar包所在的位置
+//		job.setJar("d:/wc.jar");	// 这种写死了，一般不用
+		// 通过JobSubmitter.class找到它的包的路径；
+		job.setJarByClass(JobSubmitter.class);
+		// 2、封装参数： 本次job所要调用的Mapper实现类、Reducer实现类
+		job.setMapperClass(WordcountMapper.class);
+		job.setReducerClass(WordcountReducer.class);
+		// 3、封装参数：本次job的Mapper实现类、Reducer实现类产生的结果数据的key、value类型
+		job.setMapOutputKeyClass(Text.class);
+		job.setMapOutputValueClass(IntWritable.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		Path output = new Path("/wordcount/output");
+		FileSystem fs = FileSystem.get(new URI("hdfs://h250:9000"),conf,"root");
+		if(fs.exists(output)){
+			fs.delete(output, true);
+		}
+		// 4、封装参数：本次job要处理的输入数据集所在路径、最终结果的输出路径
+		FileInputFormat.setInputPaths(job, new Path("/wordcount/input"));
+		FileOutputFormat.setOutputPath(job, output);  // 注意：输出路径必须不存在
+		// 5、封装参数：想要启动的reduce task的数量；map task数量由系统分配；
+		job.setNumReduceTasks(2);
+		// 6、提交job给yarn，mapreduce程序在 yarn中运行，客户端会与mapreduce程序失去联系；因此使用 job.waitForCompletion()方法，表示客户端一直等待，不退出；
+		// true表示将 ResoureManager返回的信息打印出来；
+		boolean res = job.waitForCompletion(true);
+		System.exit(res?0:-1);
+	}
+}
+
+
