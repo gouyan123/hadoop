@@ -11,9 +11,10 @@ import java.net.InetAddress;
 public class HelloWorld {
     public static void main(String[] args) {
         try {
-            //设置集群名称
+            /**设置集群名称
+             * 集群名称通过 http://192.168.245.128:9200/获取；*/
             Settings settings = Settings.builder()
-                    .put("cluster.name", "my-es")
+                    .put("cluster.name", "elasticsearch")
                     .build();
             //创建client
             TransportClient client = new PreBuiltTransportClient(settings).addTransportAddresses(
@@ -21,7 +22,9 @@ public class HelloWorld {
                     new InetSocketTransportAddress(InetAddress.getByName("192.168.245.128"), 9300));
 //                    new InetSocketTransportAddress(InetAddress.getByName("192.168.245.128"), 9300),
 //                    new InetSocketTransportAddress(InetAddress.getByName("192.168.245.128"), 9300));
-            //搜索数据（.actionGet()方法是同步的，没有返回就等待）；execute()将返回结果future里面，相当与Transformation转换算子；actionGet()再去文件里面查，相当于action算子；
+           /** prepareGet(...)表示搜索数据；
+            * execute()表示执行查询命令，将结果存到future里，但是不一定什么时候返回结果，相当于Transformation转换算子；
+            * actionGet()是同步方法，去future里面等返回结果，没有返回就等待，相当于action算子；*/
             GetResponse response = client.prepareGet("store", "books", "1").execute().actionGet();
             //输出结果
             System.out.println(response);

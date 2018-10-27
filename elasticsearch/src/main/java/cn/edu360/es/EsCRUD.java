@@ -55,18 +55,18 @@ public class EsCRUD {
     public void init() throws Exception {
         //设置集群名称
         Settings settings = Settings.builder()
-                .put("cluster.name", "my-es")
-                //自动感知的功能（可以通过当前指定的节点获取所有es节点的信息）
+                .put("cluster.name", "elasticsearch")
+                /**client.transport.sniff = true：根据当前指定连接节点，自动感知集群中其他节点信息*/
                 .put("client.transport.sniff", true)
                 .build();
         //创建client
         client = new PreBuiltTransportClient(settings).addTransportAddresses(
-                new InetSocketTransportAddress(InetAddress.getByName("192.168.100.211"), 9300),
+                new InetSocketTransportAddress(InetAddress.getByName("192.168.100.211"), 9300)/*,
                 new InetSocketTransportAddress(InetAddress.getByName("192.168.100.212"), 9300),
-                new InetSocketTransportAddress(InetAddress.getByName("192.168.100.213"), 9300));
+                new InetSocketTransportAddress(InetAddress.getByName("192.168.100.213"), 9300)*/);
     }
 
-
+    // 插入数据
     @Test
     public void testCreate() throws IOException {
         IndexResponse response = client.prepareIndex("gamelog", "users", "1")
@@ -79,7 +79,7 @@ public class EsCRUD {
                                     .field("fv", 9999)
                                     .field("message", "trying out Elasticsearch")
                                 .endObject()
-                ).get();
+                ).get();//  get()为action算子；
     }
 
     //查找一条

@@ -30,7 +30,7 @@ public class HbaseClientDML {
 			Configuration conf = HBaseConfiguration.create();
 			/**hbase服务器注册到zookeeper中，要去zookeeper中获取服务相关信息，因此配置zk地址*/
 			/**客户端只跟 zk 打交道*/
-			conf.set("hbase.zookeeper.quorum", "172.17.1.250:2181");
+			conf.set("hbase.zookeeper.quorum", "master128,slave129,slave130");
 			/**连接工厂 ConnectionFactory 根据 配置类Configuration 创建连接对象*/
 			conn = ConnectionFactory.createConnection(conf);
 		} catch (IOException e) {
