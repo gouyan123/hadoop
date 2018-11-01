@@ -9,6 +9,7 @@
         <module name="elasticsearch" />
         <module name="hbase" />
         <module name="hdfs" />
+        <module name="lucene" />
       </profile>
     </annotationProcessing>
   </component>

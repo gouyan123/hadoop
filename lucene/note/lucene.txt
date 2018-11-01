@@ -1,0 +1,26 @@
+创建 lucene项目，引入 lucene-core包；
+org.apache.lucene.analysi.Analyzer
+分析器，分词器组件的核心API，它的职责：构建真正对文本进行分词处理的TokenStream（分词处理器）。通过调用它的如下两个方法，得到输入文本的分词处理器，分词处理器如下：Analyzer类的 tokenStream()方法构建分词器TokenStream；
+public final TokenStream tokenStream(String fieldName, Reader reader)
+public final TokenStream tokenStream(String fieldName, String text)
+跟 org.apache.lucene.analysi.Analyzer，这是一个抽象类，不能实例化；跟tokenStream()方法：
+public final TokenStream tokenStream(final String fieldName,final Reader reader) {
+    TokenStreamComponents components = reuseStrategy.getReusableComponents(this, fieldName);
+    final Reader r = initReader(fieldName, reader);
+    if (components == null) {
+      components = createComponents(fieldName);
+      reuseStrategy.setReusableComponents(this, fieldName, components);
+    }
+    components.setReader(r);
+    return components.getTokenStream();
+}
+问题1：从哪里得到了TokenStream？
+问题2：方法传入的字符流Reader 给了谁？
+问题3： components是什么？components的获取逻辑是怎样？
+问题4：createComponents(fieldName) 方法是个什么方法？
+问题5：Analyzer能直接创建对象吗？
+问题6：为什么它要这样设计？
+问题7：请看一下Analyzer的实现子类有哪些？
+问题8：要实现一个自己的Analyzer，必须实现哪个方法？
+---
+创建 com.gouyan.lucene.analizer.MyWhitespaceAnalyzer 实现Analyzer类，作为分词器
